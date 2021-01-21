@@ -343,6 +343,8 @@ public class FODCircleView extends ImageView implements ConfigurationListener {
             return true;
         } else if (event.getAction() == MotionEvent.ACTION_MOVE) {
             return true;
+        } else if (event.getAction() == MotionEvent.ACTION_CANCEL) {
+            hideCircle();
         }
 
         mFODAnimation.hideFODanimation();
